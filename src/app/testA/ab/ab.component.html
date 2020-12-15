@@ -1,1 +1,19 @@
-<p>ab works!</p>
+<nz-table #basicTable [nzData]="list" [nzFrontPagination]="false"
+          nzBordered nzSize="middle">
+  <thead>
+    <th style="text-align: center;">序号</th>
+    <th style="text-align: center;">姓名</th>
+    <th style="text-align: center;">创建时间</th>
+    <th style="text-align: center;">邮箱</th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let data of basicTable.data; index as idx">
+      <td>{{ idx + 1 }}</td>
+      <td>{{ data.name }}</td>
+      <td>{{ data.createtime | date:'yyyy-MM-dd HH:mm'}}</td>
+      <td>{{ data.email }}</td>
+    </tr>
+  </tbody>
+
+</nz-table>
