@@ -29,4 +29,8 @@ export class Service {
     return this.http.get('/api/test/myest', { params });
   }
 
+  GetCookie(): Observable<any> {
+    return this.http.get('api/test/putcookie');
+  }
+
 }

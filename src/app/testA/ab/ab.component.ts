@@ -19,6 +19,7 @@ export class AbComponent implements OnInit {
 
   ngOnInit(): void {
     this.doQuery();
+    this.getcookie();
   }
 
   private doQuery(): void {
@@ -30,6 +31,10 @@ export class AbComponent implements OnInit {
         this.list = resp.data.list;
       }
     );
+  }
+
+  private getcookie(): void{
+    this.service.GetCookie().subscribe();
   }
 
 }
