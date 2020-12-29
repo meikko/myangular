@@ -6,6 +6,7 @@ import { TestARoutingModule } from './testA-routing.module';
 import { TestAComponent } from './test-a.component';
 import { AbComponent } from './ab/ab.component';
 import { AcComponent } from './ac/ac.component';
+import { FileUpdataComponent } from './file-demo/file-updata.component';
 
 
 registerLocaleData(zh);
@@ -15,7 +16,8 @@ registerLocaleData(zh);
   declarations: [
     TestAComponent,
     AbComponent,
-    AcComponent
+    AcComponent,
+    FileUpdataComponent
   ],
   imports: [
     ShareModule,
