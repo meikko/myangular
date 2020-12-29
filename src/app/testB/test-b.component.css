@@ -1,0 +1,11 @@
+.ant-breadcrumb {
+  padding-left: 45px;
+  height: 56px;
+  line-height: 56px;
+  background: white;
+  border: 1px solid #E7E7E7;
+}
+
+.content-warp {
+  min-height: 1000px;
+}

@@ -1,1 +1,16 @@
-<p>test-b works!</p>
+<nz-layout>
+  <nz-sider nzTheme="dark">
+    <ul nz-menu nzMode="inline" nzTheme="dark">
+
+      <li nz-menu-item nzMatchRouter>
+        <i nz-icon nzType="solution" nzTheme="outline"></i>
+        <a routerLink="./bc">栏目1</a>
+      </li>
+
+    </ul>
+  </nz-sider>
+  <nz-content class="content-warp">
+    <nz-breadcrumb nzAutoGenerate="true"></nz-breadcrumb>
+    <router-outlet></router-outlet>
+  </nz-content>
+</nz-layout>

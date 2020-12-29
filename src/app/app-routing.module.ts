@@ -16,13 +16,13 @@ const routes: Routes = [
     path: 'testA',
     resolve: { commonService: CommonService },
     loadChildren: () => import('./testA/test-a.module').then(m => m.TestAModule),
-    data: { breadcrumb: '栏目1' },
+    data: { breadcrumb: '条目A' },
   },
   {
     path: 'testB',
-    // loadChildren: () => import('./testB/test-b.module').then(m => m.TestBModule),
-    component: TestBComponent,
-    data: { breadcrumb: '栏目2' }
+    loadChildren: () => import('./testB/test-b.module').then(m => m.TestBModule),
+    // component: TestBComponent,
+    data: { breadcrumb: '条目B' }
   },
   {
     path: 'error', component: ErrorComponent
